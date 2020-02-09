@@ -17,11 +17,10 @@ class Points {
 
         if(message.content.indexOf("++") > -1) {
             for(const mention of message.mentions.users) {
-                // if(mention[1].id === message.author.id) {
-                //     message.author.send("You may not give yourself points! Tsk!");
-                //     continue ;
-                // } else 
-                if(mention[1].id === message.client.user.id) {
+                if(mention[1].id === message.author.id) {
+                    message.author.send("You may not give yourself points! Tsk!");
+                    continue ;
+                } else if(mention[1].id === message.client.user.id) {
                     message.author.send("Thanks, but I already have all the points!");
                     continue ;
                 } else {
@@ -60,14 +59,7 @@ class Points {
                 if(!res.hasOwnProperty(user.id)) res[user.id] = add;
                 else res[user.id] = res[user.id] + add;
                 this.writePoints(res)
-                    // .then(message.channel.send(`${user.displayAvatarURL}${user} has been awarded a point! (Total: ${res[user.id]})`))
-                    .then( res => {
-                        const embed = new Discord.RichEmbed()
-                        .setImage(user.avatarUrl)
-                        .setTitle("Points Awarded!")
-                        .setDescription(`${user} has been awarded a point! (Total: ${res[user.id]})`);
-                        message.channel.send(embed);
-                    })
+                    .then(message.channel.send(`${user.displayAvatarURL}${user} has been awarded a point! (Total: ${res[user.id]})`))
                     .catch( console.log );
             })
             .catch( console.log );
