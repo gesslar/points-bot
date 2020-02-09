@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/gesslar/points-bot.git"
   },
-  "keywords": [],
+  "keywords": [ "discord", "node.js", "javascript" ],
   "author": "",
   "license": "ISC",
   "bugs": {
