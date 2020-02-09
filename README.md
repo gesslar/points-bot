@@ -17,3 +17,4 @@ Invite the bot!
 
 # Usage
 In a channel, simply mention users (one or more) and type ++ to grant them imaginary internet points.
+    @gesslar ++
