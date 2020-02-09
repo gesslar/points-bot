@@ -1,5 +1,5 @@
 # points-bot
-This is a fake points bot!
+This is a Discord bot where users can grant imaginary internet points to their peers. Feel free to fork or whatever. If you want to improve upon it, feel free to submit a pull request.
 
 # Setup
 Create a `.env` file in the root of your project and include the following lines in it:
