@@ -14,3 +14,6 @@ Whatever file you decide to have, you should ensure it exists and without any me
 will do.
 
 Invite the bot!
+
+# Usage
+In a channel, simply mention users (one or more) and type ++ to grant them imaginary internet points.
