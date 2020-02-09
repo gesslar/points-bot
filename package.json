@@ -1,0 +1,25 @@
+{
+  "name": "points-bot",
+  "version": "1.0.0",
+  "description": "This is a fake points bot!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gesslar/points-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gesslar/points-bot/issues"
+  },
+  "homepage": "https://github.com/gesslar/points-bot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "lowdb": "^1.0.0"
+  }
+}
