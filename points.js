@@ -14,7 +14,6 @@ class Points {
     }
 
     onMessage (message) {
-
         if(message.content.indexOf("++") > -1) {
             for(const mention of message.mentions.users) {
                 if(mention[1].id === message.author.id) {
