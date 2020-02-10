@@ -58,7 +58,7 @@ class Points {
                 if(!res.hasOwnProperty(user.id)) res[user.id] = add;
                 else res[user.id] = res[user.id] + add;
                 this.writePoints(res)
-                    .then(message.channel.send(`${user.displayAvatarURL}${user} has been awarded a point! (Total: ${res[user.id]})`))
+                    .then(message.channel.send(`:star: ${user} has been awarded a point! (Total: ${res[user.id]})`))
                     .catch( console.log );
             })
             .catch( console.log );
